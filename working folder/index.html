@@ -1,39 +1,167 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Music website</title>
+    <title>Music Website</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <!-- header -->
     <header>
-      <h1>Music site</h1>
-      <nav>
+      <h4 id="header">Music site</h4>
+      <nav id="navbar">
         <ul>
+          <li><a href="#welcome">Home</a></li>
           <li><a href="#featured">Featured Artists</a></li>
           <li><a href="#genres">Genres</a></li>
           <li><a href="#instruments">Instruments</a></li>
+          <li><a href="#releases">New Release</a></li>
+          <li><a href="#events">Events</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- Featured artist section -->
+    <h1 class="text">Welcome to Music Site</h1>
+
+    <h2 class="text">Featured Artists</h2>
     <section id="featured">
-      <h2>Featured Artists</h2>
-      <article>
-        <h3>Artist 1</h3>
-        <p>Description 1</p>
+      <article class="card">
+        <img class="card-image" src="/photos/Eminem.jpeg" alt="Eminem" />
+        <h3 class="text">Eminem</h3>
+        <p class="text">Hip-hop</p>
       </article>
-      <article>
-        <h3>Artist 2</h3>
-        <p>Description 2</p>
+      <article class="card">
+        <img class="card-image" src="/photos/taylor.jpeg" alt="Taylor Swift" />
+        <h3 class="text">Taylor Swift</h3>
+        <p class="text">Pop, country, folk, rock</p>
       </article>
-      <article>
-        <h3>Artist 3</h3>
-        <p>Description 3</p>
+      <article class="card">
+        <img class="card-image" src="/photos/beyoncé.png" alt="beyoncé" />
+        <h3 class="text">Beyoncé</h3>
+        <p class="text">R&B, Pop, Hip-hop</p>
+      </article>
+      <article class="card">
+        <img class="card-image" src="/photos/jayz.png" alt="Jay-Z" />
+        <h3 class="text">Jay-Z</h3>
+        <p class="text">East Coast hip-hop</p>
+      </article>
+      <article class="card">
+        <img class="card-image" src="/photos/ed.jpeg" alt="Ed Sheeran" />
+        <h3 class="text">Ed Sheeran</h3>
+        <p class="text">Pop, Folk-pop, Soft rock</p>
+      </article>
+
+      <!-- Add more articles for other featured artists -->
+    </section>
+
+    <h2 class="text">Genres</h2>
+    <section id="genres">
+      <article class="card">
+        <img
+          class="card-image"
+          src="/photos/classic.jpeg"
+          alt="classical Music"
+        />
+        <h3 class="text">Classical Music</h3>
+      </article>
+      <article class="card">
+        <img
+          class="card-image"
+          src="/photos/country.avif"
+          alt="Country Music"
+        />
+        <h3 class="text">Country Music</h3>
+      </article>
+      <article class="card">
+        <img class="card-image" src="/photos/hip hop.jpeg" alt="Hip Hop" />
+        <h3 class="text">Hip Hop</h3>
+      </article>
+      <article class="card">
+        <img class="card-image" src="/photos/pop.jpeg" alt="Pop" />
+        <h3 class="text">Pop Music</h3>
+      </article>
+      <article class="card">
+        <img class="card-image" src="/photos/jazz.png" alt="Jazz" />
+        <h3 class="text">Jazz</h3>
       </article>
     </section>
-    <!-- footer -->
+
+    <h2 class="text">Instruments</h2>
+    <section id="instruments">
+      <article class="card">
+        <img class="card-image" src="/photos/piano.jpeg" alt="Piano" />
+        <h3 class="text">Piano</h3>
+        <p class="text">Classic</p>
+        <!-- Include images or videos demonstrating Instrument 1 -->
+      </article>
+      <article class="card">
+        <img class="card-image" src="/photos/violin.jpeg" alt="Violin" />
+        <h3 class="text">Violin</h3>
+        <p class="text">Classic</p>
+      </article>
+      <article class="card">
+        <img class="card-image" src="/photos/drums.webp" alt="Drums" />
+        <h3 class="text">Drums</h3>
+        <p class="text">Rock</p>
+      </article>
+      <article class="card">
+        <img class="card-image" src="/photos/guitar.webp" alt="Guitar" />
+        <h3 class="text">Guitar</h3>
+        <p class="text">R&B</p>
+      </article>
+      <article class="card">
+        <img class="card-image" src="/photos/saxophone.webp" alt="Saxophone" />
+        <h3 class="text">Saxophone</h3>
+        <p class="text">Jazz</p>
+      </article>
+    </section>
+
+    <h2 class="text">New Releases</h2>
+    <section class="audio" id="releases">
+      <div class="audio">
+        <audio controls>
+          <source src="/audios/audio1.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio">
+        <audio controls>
+          <source src="/audios/audio2.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="audio">
+        <audio controls>
+          <source src="/audios/drums.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </section>
+
+    <h2 class="text">Event</h2>
+    <section id="events">
+      <article class="card-event">
+        <img
+          class="card-image"
+          src="/photos/Pink-Summer-2024.webp"
+          alt="Summer Carnival 2024"
+        />
+        <h3 class="text">P!nk</h3>
+        <p class="text">
+          Summer Carnival 2024 Aug 14,2024 6:30PM rogers Centre
+        </p>
+      </article>
+      <article class="card-event">
+        <img
+          class="card-image"
+          src="/photos/taylor event.avif"
+          alt="The Eras Tour"
+        />
+        <h3 class="text">Taylor Swift</h3>
+        <p class="text">The Eras Tour Nov 14,2024 7PM rogers Centre</p>
+      </article>
+    </section>
     <footer>
       <p>&copy; 2024 Music Website. All rights reserved.</p>
     </footer>

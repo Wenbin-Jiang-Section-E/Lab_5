@@ -1,0 +1,148 @@
+/* CSS variables */
+:root {
+  --primary-color: #000000;
+  --secondary-color: #fff;
+  --font-family: "Charm", cursive;
+  --card-background: #5f5e5e;
+}
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap");
+
+/* Fluid typography */
+h1 {
+  font-size: clamp(30px, 6vw, 80px);
+}
+h2 {
+  font-size: clamp(20px, 5vw, 70px);
+}
+h3 {
+  font-size: clamp(10px, 1.8vw, 50px);
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: clamp(10px, 1vw, 30px);
+  margin: 0;
+  padding: 0;
+}
+
+/* basic styling */
+body {
+  font-family: var(--font-family);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin-top: 10%;
+  margin-bottom: 6vw;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+  font-size: 1.6vw;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  text-align: center;
+  padding: 6px;
+}
+
+nav ul li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: var(--secondary-color);
+  color: black;
+}
+
+#header,
+#navbar {
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+
+.text {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 17%;
+  margin: 5px;
+  background-color: var(--card-background);
+  padding: 0;
+  aspect-ratio: 3/4;
+}
+
+.card-event {
+  width: 40%;
+  margin: 1%;
+  background-color: var(--card-background);
+  padding: 0;
+}
+
+.card:hover,
+.card-event:hover {
+  transform: scale(1.3);
+}
+
+.card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.audio {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vw;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  article {
+    flex: 0 1 calc(50% - 20px);
+  }
+}
